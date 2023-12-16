@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Dragonomica - Contact</title>
+		<meta name="description" content="Ryan Balachandran's Final Project!">
+		<meta name="keywords" content="Final project dragon website">
+		<meta name="created" content="2023-10-24">   
+		<meta name="author" content="Ryan Balachandran">	
+		
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		<link href="css/contact.css" rel="stylesheet" type="text/css">
+		<script src="javascript/tab.js" defer></script> 
+		<script src="javascript/contact.js" defer></script>
+
+		<link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<style>
+			body{ background-image: url("images/backgrounds/dragonfantasy.jpg") }
+		</style>
+	
+		<script type="text/javascript">
+			function MM_swapImgRestore() { //v3.0
+			  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+			}
+
+			function MM_preloadImages() { //v3.0
+			  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+			    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+			    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+			}
+
+			function MM_findObj(n, d) { //v4.01
+			  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+			    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+			  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+			  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+			  if(!x && d.getElementById) x=d.getElementById(n); return x;
+			}
+
+			function MM_swapImage() { //v3.0
+			  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+			   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+			}
+		</script>
+	</head>
+
+	<body onLoad="MM_preloadImages('images/bluedragon1_spin.gif','images/bluedragon2_spin.gif')">
+		<div id="wrapper">
+			<!-- #BeginLibraryItem "/Library/header.lbi" -->
+			<header> 
+				<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('logo1','','images/bluedragon1_spin.gif',1)"> 
+					<img src="images/bluedragon1.png" alt="" width="200" height="200" id="logo1"></a> 
+				
+				<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('logo2','','images/bluedragon2_spin.gif',1)"> 
+					<img src="images/bluedragon2.png" alt="" width="200" height="200" id="logo2"></a>
+				
+				<h1 id="title"><a href="index.html">Dragonomica</a></h1>
+				<h2 id="subtitle"><a href="index.html">An Introduction To Dragons</a></h2>
+			</header>
+			<!-- #EndLibraryItem -->
+			
+			<div id="sidenav" role="navigation">
+				<a href="index.html">Home</a> 
+                    <button class="dropdown-btn">About Dragons <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-container">
+                         <a href="DragonH_L.html">Dragon History and Lore</a>
+                         <a href="DragonsVWyverns.html">Dragons Vs. Wyverns</a>
+                         <a href="DragonSpecies.html">Dragon Species</a>
+                         <a href="DragonH&B.html">Dragon Habits and Behaviors</a>
+                         <a href="DragonChar.html">Dragon Characteristics</a>
+                         <a href="Dragontaming.html">Dragon Taming</a>
+                    </div>
+                    <a href="Aboutme.html" id="pg8">About Me</a>
+                    <a href="Contact.html" class="active_tab" id="pg9">Contact me</a>
+			</div>
+			
+			<div id="content">
+				<form name="contactMe" method="post" id="contactMe" action="http://www.rebol.com/cgi-bin/test-cgi.cgi" onsubmit="/javascript/contact.js/validateForm(); return false;">
+					<fieldset>
+						<legend><h3>Name</h3></legend>
+						<table>
+                                   <tr>
+                                        <td><label for="fname"><strong>First name:</strong></label></td>
+                                        <td>
+                                             <input type="text" id="fname" name="fname" placeholder="Ryan" size="25" pattern="^[A-Za-z]+$" required autofocus tabindex="1">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td><label for="lname"><strong>Last name:</strong></label></td>
+                                        <td>
+                                             <input type="text" id="lname" name="lname" placeholder="Balachandran" size="25" pattern="^[A-Za-z]+$" required tabindex="2">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td><label for="age"><strong>Age:</strong></label></td>
+                                        <td>
+                                             <input type="number" id="age" name="age" placeholder="28" min="1" max="100" pattern="^[0-9]+$" required tabindex="3">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td><label for="phone"><strong>Telephone #:</strong></label></td>
+                                        <td>
+                                             <input name="phone" type="tel" required id="phone" placeholder="###-###-####" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" tabindex="4" size="12" maxlength="12">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td><label for="email"><strong>Email:</strong></label></td>
+                                        <td>
+                                             <input type="email" id="email" name="email" placeholder="youremail@something.com" size="25" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required tabindex="5"> 
+                                             <span></span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td><label for="date"><strong>Date:</strong></label></td>
+                                        <td>
+                                             <input type="date" name="date" id="date" required tabindex="6">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+						</table>
+					</fieldset><br>
+					
+					<fieldset>
+						<legend><h3>Address</h3></legend>
+						<table>
+                                   <tr>
+                                        <td><label for="street"><strong>Street:</strong></label></td>
+                                        <td>
+                                             <input type="text" id="street" name="street" placeholder="855 Lake St" size="20" required tabindex="7">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td><label for="city"><strong>Town/City:</strong></label></td>
+                                        <td>
+                                             <input type="text" id="city" name="city" placeholder="Oak Park" size="20" required tabindex="8">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <!-- Improve by adding a regular expression object with all valid states or change to selection list -->
+                                        <td><label for="state"><strong>State:</strong></label></td>
+                                        <td>
+                                             <input type="text" id="state" name="state" placeholder="IL" size="3" maxlength="2" pattern="^[A-Z]{2}$" required tabindex="8">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+                                   <tr>
+                                        <td><label for="zip"><strong>ZIP:</strong></label></td>
+                                        <td>
+                                             <input type="text" id="zip" name="zip" placeholder="60301" size="7" maxlength="6" pattern="^[0-9]{5,6}$" required tabindex="9">
+                                             <span></span>
+                                        </td>
+                                   </tr>
+						</table>
+					</fieldset><br>
+					
+					<fieldset>
+						<legend><h3>Comments</h3></legend>
+						<table>
+                                   <tr>
+                                        <div class="like"><label><strong>Did you enjoy my website?</strong></label></div>
+                                        <div class="like"><input type="radio" id="yes" name="like" value="yes">
+									<label for="yes">Yes</label></div>
+								<div class="like"><input type="radio" id="no" name="like" value="no">
+									<label for="no">No</label></div>
+                                   </tr>
+                                   <tr>
+                                        <td>
+                                             <textarea id="comments" name="comments" cols="50" rows="9" placeholder="What did or didn't like about my website?"></textarea>
+                                        </td>
+                                   </tr>
+						</table>
+					</fieldset><br>
+					
+					<input name="submit" type="submit" id="submit" value="Submit"/>
+                         <input type="reset" name="reset" id="reset" value="Reset Form"/> 
+                         <span id="createError"></span>  
+				</form>
+			</div>
+			
+			<!-- #BeginLibraryItem "/Library/footer.lbi" -->			
+			<footer>
+				Copyright &copy; 2023 Ryan Balachandran<br>
+<!--
+                    <address>
+                         22 19th Avenue &bull;
+                         Haverhill, MA, 01830 &bull;
+                         (978) 245 - 6415
+                     </address>
+-->
+                    <a href="mailto:Ryan_Balachandran@student.uml.edu" tabindex="-1">Ryan_Balachandran@student.uml.edu</a>
+				<br><a href="#"><i class="fa fa-home fa-2x">&#8593;</i></a>
+			</footer>
+			<!-- #EndLibraryItem -->
+		</div>
+	</body>
+</html>

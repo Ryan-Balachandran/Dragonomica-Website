@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Styles for the overlay */
+div#lbOverlay {
+     position: fixed;					/* Overlay is fixed on screen */
+     z-index: 1;						/* Overlay sits on top of other content */
+     width: 100%;						/* Full width */
+     height: 100%;						/* Full height */
+     top: 0;
+     left: 0;
+     background-color: rgba(5, 145, 54, 0.85);  /* Semitransparent green background */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+/* Styles for the figure box within the overlay */
+div#lbOverlay figure {
+     display: block;
+/*   width: 60%;*/
+/*	max-width: 75%;*/
+/*	height: auto;*/
+	max-width: 70%;
+}
+
+/* Styles for the image within the overlay */
+div#lbOverlay figure img {	
+     display: block;
+     margin: auto;
+     width: 100%;
+     height: auto;
+     box-shadow: 5px 5px 20px black;
+     animation-name: zoom;      /* animate the opening of the figure */
+     animation-duration: 0.5s;    
+}
+
+/* Styles for the caption within the overlay */
+div#lbOverlay figure figcaption {
+     text-align: center;
+     font-size: 1.25em;
+     color: white;
+     position: relative;
+     top: 10px;
+     margin-top: 100px;
+     animation-name: zoom;      /* animate the opening of the figure */
+     animation-duration: 1s;    /* over a 1-second interval */  
+}
+  
+/* Styles for the overlay close button */
+div#lbOverlay div#lbOverlayClose {
+	position: absolute;
+     top: 20px;
+     right: 40px;
+     color: #f1f1f1;
+     font-size: 40px;
+     cursor: pointer;
+     user-select: none;
+}
+  
+/* Hovering styles for the modal window close button */
+div#lbOverlay div#lbOverlayClose:hover {
+     color: #F7F1A9;
+     text-shadow: 3px 3px 0px black;
+}
+
+/* Keyframe animation for the opening of the modal window figure and caption */
+@keyframes zoom {
+     from {transform:scale(0)}
+     to {transform:scale(1)}
+}

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+table{
+     text-align: center;
+     border: 2px solid #0087CB;
+     margin-left: auto;
+     margin-right: auto;
+	margin-bottom: 40px;
+}
+
+th, td{
+     border: 1px solid red;
+     padding: 10px;
+}
+
+label{ font-size: 1.2em; }
+
+tr:nth-child(even) {background-color: #92DEA1;}
+tr:nth-child(odd) {background-color: #A0C0DF;}
+
+/*
+:placeholder-shown, :focus{
+     font-size: 1em;
+} 
+*/
+
+/* Fix font shrinking on blur */
+
+#createDragon{
+     display: flex;
+     justify-content: center;
+}
+
+#create, #reset{
+	font-size: 1.6em;
+	font-weight: bold;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	color: #000000;
+	background: #B9DFFF;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #12be40;
+	text-shadow: none;
+     cursor: pointer;
+     height: 50px;
+     width: 49%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border: outset;
+}
+
+#create:hover, #reset:hover{
+	color: #00ff44;
+	background: #0ABC;
+     box-shadow: 3px 3px 3px orange;
+}
+
+nput + span {
+     position: relative;
+}
+
+#wings2 + span{
+     float: right;
+}
+
+input:invalid, input:focus:invalid {
+     border: 2px solid red;
+}
+
+input:valid, input:focus:valid {
+     border: 2px solid green;
+}
+
+input:invalid + span::before {
+     content: "✖";
+     color: red;
+}
+
+input:valid + span::before {
+     content: "✓";
+     color: green;
+}
+
+form#dragonMaker input:focus-within{
+     background-color: lightblue;
+}
+
+#createError{
+     position: relative;
+     color: red;
+     top: 10px;
+     font-size: 1.5em;
+}
