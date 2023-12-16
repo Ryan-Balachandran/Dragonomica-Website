@@ -1,0 +1,93 @@
+table{
+     text-align: center;
+     border: 2px solid #0087CB;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+th, td{
+     border: 1px solid red;
+     padding: 10px;
+}
+
+label{
+     font-size: 1.2em;
+}
+
+tr:nth-child(even) {background-color: #92DEA1;}
+tr:nth-child(odd) {background-color: #A0C0DF;}
+
+
+
+
+
+
+
+/* :placeholder-shown, :focus{
+     font-size: 1em;
+} */
+
+/* Fix font shrinking on blur */
+
+#createDragon{
+     display: flex;
+     justify-content: center;
+}
+
+#create, #reset{
+     background: #B9DFFF;
+     color: #000000;
+     box-shadow: 5px 5px 5px #12be40;
+     text-shadow: none;
+     cursor: pointer;
+     height: 50px;
+     font-size: 1.4em;
+     width: 49%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     border: outset;
+}
+
+#create:hover, #reset:hover{
+     background: #000dff;
+     color: #00ff44;
+     box-shadow: 3px 3px 3px #eee;
+     font-weight: 700;
+}
+
+input + span {
+     position: relative;
+}
+
+#wings2 + span{
+     float: right;
+}
+
+input:invalid, input:focus:invalid {
+     border: 2px solid red;
+}
+
+input:valid, input:focus:valid {
+     border: 2px solid green;
+}
+
+input:invalid + span::before {
+     content: "✖";
+     color: red;
+}
+
+input:valid + span::before {
+     content: "✓";
+     color: green;
+}
+
+form#dragonMaker input:focus-within{
+     background-color: lightblue;
+}
+
+#createError{
+     position: relative;
+     color: red;
+     top: 10px;
+     font-size: 1.5em;
+}
