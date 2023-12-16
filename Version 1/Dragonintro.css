@@ -1,0 +1,115 @@
+* { box-sizing: border-box; }
+     /*Universal selector to configure web page into two-column format*/
+
+body, h1, h2, h3, p, ul, header, nav, main, footer{display: block; }
+
+#wrapper{width: 90%;
+         margin-right: auto;
+         margin-left: auto;
+         min-width: 900px;
+         max-width: 1280px;}
+         
+body{background-image: url(Images/fantasytree.jpg);}
+
+main{padding-left: 5px;
+     padding-right: 0;
+     padding-bottom: 4px;
+     display: block;
+     margin-left: 170px;
+     padding-top: 0;
+     display: block;
+     background-color: #000000;
+     opacity: .8;
+     border: 2px solid #DDA92E;}
+
+h1{padding-top: 0;
+   padding-left: 4em;
+   padding-right: 230px;
+   font-size: 2.9em;
+   text-align: center;
+   font-family: cursive;
+   color: #0C851E;
+   text-shadow: 2px 2px 2px black;}
+   
+h2{font-family: cursive;
+   text-align: center;
+   padding-bottom: 10px;
+   color: #EF5310;
+   padding-top: 0;
+   padding-left: 220px;
+   text-shadow: 2px 2px 2px black;}
+   
+h3{font-family: cursive;
+   padding-bottom: 10px;
+   color: #7AC959;
+   padding-top: 0;
+   text-align: left;
+   font-size: 2em;
+   padding-left: 10px;}
+   
+p{color: #D4E3FF;
+  padding-left: 25px;
+  font-family: "Times New Roman";
+  padding-right: 10px;}
+  
+ul{color: #D4E3FF;
+  padding-left: 60px;
+  font-family: "Times New Roman"}
+   
+header{background-image: url(Images/bluedragon.png);
+       background-repeat: no-repeat;
+       background-position: right;}
+
+nav ul{padding-right: 0;
+       padding-left: 0;}
+       
+nav a{text-decoration: none;}
+
+nav a:link{color: #d30000;}
+nav a:visited{color: #d30000;}
+nav a:hover{color: white;
+            background-color: #7AC959;}
+            
+footer a:link{color: #7AC959;}
+footer a:visited{color: red;}
+footer a:hover{color: white;} 
+
+nav{text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 0;
+    width: 170px;
+    float: left;
+    position: relative;
+    display: inline-block;}
+    
+nav li{display: inline-block;
+       border: 3px solid green;
+       padding: 1px;
+       margin: 1px;
+       border-radius: .45em .45em .45em .45em;
+       list-style-type: none;}
+
+footer{clear: both;
+       text-align: center;
+       font-size: 1.3em;
+       padding-bottom: 10px;
+       display: block;
+       border: 1px solid red;
+       background-color: #232323;
+       opacity: .7;
+       color: #4CFF00;}
+       
+form{color: #7AC959;
+     width: 800px;}
+     
+table{text-align: center;
+      margin: 10px;
+      border: 2px solid #0087CB;}
+                
+tr:nth-child(even) {background-color: #92DEA1;}
+tr:nth-child(odd) {background-color: #A0C0DF;}
+th,td{border: 2px solid red;
+      padding: 5px;}
+       
+       

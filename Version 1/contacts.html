@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+     <!--Directive type to html5-->
+<html lang="en">
+     <!--set language to English-->
+     
+     <!--Ryan Balachandran-->
+     <!--4/25/17--->
+     <!--Final Project-->
+     <!--contact me page-->
+     <!--All images used in the web page were taken from Google Images-->
+
+<head>    <!--start head-->
+     <meta charset="utf-8">
+     <!--Set character coding to utf-8-->
+     
+     <!--[if lt IE 9]-->
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <!--[endif]-->
+     <!--Source code to assist webpage with internet explorer 8 and earlier versions-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!--script to access jquery library through google's Content Delivery Network-->
+     
+     <title>The World of Dragons</title>
+     <!--Specifies webpage title in tab-->
+     
+     <link rel="stylesheet" href="Dragonintro.css">
+     <!--link to external style sheet-->
+          
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--meta tag for zoom capability on mobile devices-->
+          
+     <style>
+          body{background-image: url(Images/dragonfantasy.jpg)}
+     </style>  <!--CSS style code-->
+     <!--Embedded CSS code to change background image-->
+     
+</head>   <!--close head-->
+
+
+
+<body>    <!--start body-->
+
+     <div id="wrapper">
+     <!--division element-->
+     
+     <header>
+          <h1>Dragonimica</h1>
+          <h2>An introduction to Dragons</h2>  <!--header sizes-->
+     </header>
+     
+     <div>
+          <nav>
+               <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#"/>About Dragons</a></li>
+                         <ul>
+                              <li><a href="DragonH&L.html">Dragon History and Lore</a></li>
+                              <li><a href="DragonsVWyverns.html">Dragons Vs. Wyverns</a></li>
+                              <li><a href="DragonSpecies.html">Dragon Species</a></li>
+                              <li><a href="DragonH&B.html">Dragon Habits and Behaviors</a></li>
+                              <li><a href="Dragonchar.html">Dragon Characteristics</a></li>
+                              <li><a href="Dragontaming.html">Dragon Taming</a></li>
+                         </ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="contacts.html">Contact me</a></li>
+               </ul>    
+          </nav>   
+     </div>
+     <!--Navigational bar that is floated to the left vertically in an unordered list-->
+     <!--Attempted drop down list-->
+               
+<main role="main">    <!--start of main body-->
+
+     <!--aside role="complementary">...</aside-->
+                       
+     <form name="Personal" method="post" id="Personal" action="http://webdevbasics.net/scripts/demo.php">
+          <!--form for personal information with post method to send to website-->
+          <fieldset id="personal">
+               <legend><h3>Contact Me</h3></legend
+               
+               <input type="hidden" name="E-mail" id="E-mail" value="ryanbalachandran@yahoo.com">
+               
+               <label><input type="text" name="firstname" id="firstname" size="30" maxlength="15" required="required" tabindex="2" placeholder="* First Name"</label><br><br>
+               <!--text entry for first name with max character length of 15-->
+               
+               <label><input type="text" name="lastname" id="lastname" size="30" maxlength="15" required="required" tabindex="4" placeholder="* Last Name"</label><br><br>
+               <!--text entry for last name with max character length of 15-->
+               
+               <label>Date: <input type="date" name="date" id="date" size="2" required="required" placeholder="MM"</label> /
+               <label><input type="date" name="date" id="date" size="2" required="required" placeholder="DD"</label> /
+               <label><input type="date" name="date" id="date" size="4" required="required" placeholder="YYYY"</label> <br><br>
+               
+               <label>Telephone #: <input type="tel" name="phone" id="phone" tabindex="5" placeholder="###-###-####"></label><br><br>
+               
+               <label> <input type="number" name="age" id="age" min="5" max="100" required="required" tabindex="6" placeholder="Age"</label><br><br>
+               <!--spinner form control for selecting age-->
+               
+               <label>* Social Security: <input type="text" name="SS" id="SS" size="2" maxlength="3" required="required" tabindex="7" placeholder="###"</label> -
+               <input type="text" name="SS" id="SS" size="1" maxlength="2" required="required" tabindex="8" placeholder="##"</label> -
+               <input type="text" name="SS" id="SS" size="3" maxlength="4" required="required" tabindex="9" placeholder="####"</label><br><br>
+               <!--text entry for Social Security number seperated by a dash and individual text fields-->
+               
+               <label>Address: <input type="text" name="street address" id="street address" placeholder="Street Address"></label><br></br>
+               <label><input type="text" name="city" id="city" placeholder="City"></label>
+               <label><input type="text" name="state" id="state" placeholder="State/Region"></label><br></br>
+               <label><input type="text" name="zip" id="zip" placeholder="Zip Code"></label><br></br>
+               
+               <label>E-mail: <input type="email" name="email" id="email" size="50" maxlength="40" tabindex="10" placeholder="youremail@something.com"><br><br>
+               <!--email form control for email with max character length of 40-->
+               
+               <textarea name="comments" id="comments" cols="50" rows="8">Enter your comments here</textarea><br><br>
+               
+               <button type="submit">
+               <img src="submit.png" width="60" alt="submit button"><br>
+               Submit your personal information
+               </button>
+               <!--submit button with image and text below-->
+               <input type="reset">
+               <!--reset input to reset entries-->
+          </fieldset>
+     </form>
+     
+</main>   <!--close of main body-->
+
+
+
+<footer role="contentinfo">  <!--start of footer-->
+     <small><i> Copyright &copy; 2017 Ryan Balachandran </i></small><br>
+     <a href="mailto:ryanbalachandran@yahoo.com">ryanbalachandran@yahoo.com</a>
+          <!--footer is at bottom of web page-->
+          <!--mail to link-->
+          
+</footer> <!--close footer-->
+</div>    <!--end of division element-->
+</body>   <!--close body-->
+</html>   <!--close html language-->
+     
+     
