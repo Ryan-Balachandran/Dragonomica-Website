@@ -1,0 +1,42 @@
+body { position: relative; }
+.overflow-hidden {
+ overflow: hidden !important;
+}
+.fotorama__html {
+ text-align: center;
+}
+.fotorama-lightbox {
+	z-index: 10001;
+	position: absolute;
+	background-color: #fff;
+	border: 4px solid;
+	border-color: #aaa;
+	border-color: rgba(255, 255, 255, .9);
+	box-shadow: 0 1px 25px rgba(0, 0, 0, .75), 0 0 5px rgba(0, 0, 0, .5);
+}
+.fotorama-lightbox .fotorama__nav {
+ margin-top: -30px;
+ /*background-color: rgba(255, 255, 255, .75);*/
+}
+
+/* straight “close” icon instead of “cancel fullscreen” */
+.fotorama-lightbox .fotorama__fullscreen-icon {
+ background-position: -64px 0;
+}
+
+/* style thumbs span bit */
+.thumbs img {
+ width: auto;
+ height: 72px;
+ border: 2px #fff solid;
+ box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+ margin: 0 10px 10px -2px;
+ cursor: pointer;
+}
+.thumbs img.switch {
+ border-bottom: 1px dashed;
+}
+.thumbs img:hover {
+ border-color: #00afea;
+}
+div.fotorama__stage div img{ cursor:auto; }
